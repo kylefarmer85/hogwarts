@@ -23,7 +23,8 @@ class HogCard extends Component {
     let img = require(`../hog-imgs/${pigImgName}.jpg`)
 
     return (
-      <div className="PigTile" onClick={this.handleClick}>
+      <div className="ui eight wide column">
+      <div className="pigTile" onClick={this.handleClick}>
         <h3>{this.props.hog.name}</h3>
         <img src={img} alt={this.props.hog.name}/>
         { 
@@ -36,6 +37,7 @@ class HogCard extends Component {
         </div>
          : null 
          }
+      </div>
       </div>
     )
   }

@@ -12,11 +12,10 @@ class HogContainer extends Component {
   
 
   render() {
-    console.log(this.props, "test")
     return (
       <div className="ui grid container">
         { this.renderHogCard() }
-      </div>
+        </div>
     );
   }
 }
